@@ -1,7 +1,88 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62,5%;
+html {
+  font-size: 62.5%;
+}
+
+.header {
+  background-color: #fffcf4;
+  height: 900px;
+}
+
+body {
+  font-size: 1.6rem;
+  --font1: "Poppins", sans-serif;
+  --font2: "Sen", sans-serif;
+  --w: 1170px;
+}
+
+.Menu_h {
+  display: flex;
+  width: var(--w);
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  align-items: center;
+  position: sticky;
+  top: 8px;
+}
+
+.anh_logo {
+  width: 184px;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav a {
+  font-family: var(--font1);
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #5F5B53;
+  padding: 8px 21px;
+  position: relative;
+}
+
+.nav li.active a, .nav a:hover{
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav li.active a::after{
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 0.2rem;
+    background-color: #171100;
+    border-radius: 1px;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+}
+
+.bt{
+    display: inline-block;
+    font-family: var(--font1);
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FFF;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.but_sign{
+    background-color: black;
+    width: 144px;
+    border-radius: 24.5px;
+    margin-left: 49px;
 }
